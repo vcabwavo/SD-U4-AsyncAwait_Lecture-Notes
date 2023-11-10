@@ -9,7 +9,7 @@ There are two different branches associated with this lesson.
 - Async / Await functions
 
 ### What Should Already Be Understood
-- Functions, promises, resolvers, 
+- Functions, promises, resolvers 
 
 ## Files in this Lesson
 - `index.js`
