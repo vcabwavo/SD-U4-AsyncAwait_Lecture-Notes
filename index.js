@@ -14,3 +14,26 @@ import { returnData } from './promise.js'; //! DO NOT REMOVE THIS LINE
         - await
             - calls a process to "wait" for a result
 */
+
+//* Syntax concepts
+async function asyncFunctionDeclaration() {
+    //? Code here...
+}
+
+let arrowFunc = async () => {
+    //? Code here...
+}
+
+async function getName(){
+    return "Gandalf";
+};
+
+getName().then(data => console.log(data)); //? "Gandalf"
+
+//? await
+async function extraData(){
+    let info = await returnData();
+    return (`${info} in the cloud...`)
+}
+
+extraData().then(data => console.log(data)); //? "Data from Promise in the cloud..."
