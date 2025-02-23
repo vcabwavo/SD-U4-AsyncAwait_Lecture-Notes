@@ -1,4 +1,4 @@
-import { returnData } from './promise.js'; //! DO NOT REMOVE THIS LINE
+import { returnData } from "./promise.js"; //! DO NOT REMOVE THIS LINE
 
 //! Async/Await
 /* 
@@ -17,23 +17,23 @@ import { returnData } from './promise.js'; //! DO NOT REMOVE THIS LINE
 
 //* Syntax concepts
 async function asyncFunctionDeclaration() {
-    //? Code here...
+  //? Code here...
 }
 
 let arrowFunc = async () => {
-    //? Code here...
-}
-
-async function getName(){
-    return "Gandalf";
+  //? Code here...
 };
 
-getName().then(data => console.log(data)); //? "Gandalf"
-
-//? await
-async function extraData(){
-    let info = await returnData();
-    return (`${info} in the cloud...`)
+async function getName() {
+  return "Gandalf";
 }
 
-extraData().then(data => console.log(data)); //? "Data from Promise in the cloud..."
+getName().then((data) => console.log(data)); //? "Gandalf"
+
+//? await
+async function extraData() {
+  let info = await returnData();
+  return `${info} in the cloud...`;
+}
+
+extraData().then((data) => console.log(data)); //? "Data from Promise in the cloud..."
